@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
-
+import Navigation from "./components/navigation";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -24,7 +24,8 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
       <header className="bg-slate-900 text-white p-4 text-center">
-        <p>Welcome to Next.Js </p>
+        {/* <p>Welcome to Next.Js </p> */}
+        <Navigation/>
       </header>
         {children}
         <footer className="bg-slate-900 text text-white p-4 text-center"> RajanAryal@2024 </footer>
